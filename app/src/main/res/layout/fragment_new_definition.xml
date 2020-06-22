@@ -1,0 +1,191 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sebsw.memoplay.fragments.NewDefinitionFragment"
+    android:weightSum="1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="New Word:"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/wordLabel"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/wordInput"
+        android:hint="Enter new Word"
+        android:textAlignment="viewStart"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordLabel"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/slight_rounded_corners"
+        android:backgroundTint="@android:color/background_light"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/definitionLabel"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:text="Definition"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/categoryInput"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/categoryInput"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/categoryInput" />
+
+    <EditText
+        android:id="@+id/definitionInput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/slight_rounded_corners"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Enter the definition for your new word"
+        android:inputType="textPersonName"
+        android:maxLength="2500"
+        android:padding="10dp"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout6"
+        app:layout_constraintLeft_toLeftOf="@+id/definitionLabel"
+        app:layout_constraintRight_toRightOf="@+id/definitionLabel"
+        app:layout_constraintTop_toBottomOf="@+id/definitionLabel" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/constraintLayout6"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:text="Create New Word"
+            android:layout_width="0dp"
+            android:id="@+id/createBtn"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:background="@drawable/rounded_corners"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="Import Existing Word"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ImportBtn"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/createBtn"
+            tools:layout_constraintLeft_creator="1"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintLeft_toLeftOf="@+id/createBtn"
+            app:layout_constraintTop_toBottomOf="@+id/createBtn"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corners" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:text="Category:"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/categoryLabel"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/wordInput"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/wordInput"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/wordInput" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/categoryInput"
+        android:layout_width="0dp"
+        android:hint="Enter the category for your word"
+        android:textSize="18sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/categoryLabel"
+        app:layout_constraintTop_toBottomOf="@+id/categoryLabel"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/categoryLabel"
+        android:background="@drawable/slight_rounded_corners"
+        android:backgroundTint="@android:color/background_light"
+        android:padding="10dp" />
+
+    <TextView
+        android:text="Create New Word"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:background="@color/colorPrimaryDark"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@android:color/white" />
+
+
+</android.support.constraint.ConstraintLayout>

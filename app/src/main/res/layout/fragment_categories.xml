@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sebsw.memoplay.fragments.CategoriesFragment"
+    android:background="@color/colorPrimary">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <!--The layout containing the recycler view
+    is included here to reduce complexity -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.85"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="Select your category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Label"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            android:textAlignment="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:paddingRight="-5dp" />
+
+        <TextView
+            android:text="&#8942;"
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/background_light"
+            android:gravity="center_vertical"
+            android:id="@+id/categoryMenuBtn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="327dp"
+        android:layout_weight="65"
+        android:background="?android:attr/colorBackground"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp">
+        <include layout="@layout/content_categories_recycler"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+    </LinearLayout>
+
+    <Button
+        android:text="New Word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newWordBtn"
+        android:foregroundGravity="bottom"
+        android:layout_gravity="bottom"
+        android:layout_weight="14.20"
+        android:paddingBottom="5dp"
+        android:paddingStart="5dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:layout_margin="5dp" />
+
+
+</LinearLayout>

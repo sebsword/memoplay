@@ -1,0 +1,207 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sebsw.memoplay.fragments.GameFragment"
+    android:weightSum="1"
+    android:id="@+id/constraint_game"
+
+    android:background="@color/colorPrimary">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="0dp"
+        android:text="YourWord"
+        android:textSize="36sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:gravity="center_vertical|start"
+        android:textColor="@android:color/background_light"
+        android:id="@+id/wordLabel"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:inputType="text"
+        android:clickable="false"
+        android:background="@color/colorPrimaryDark"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_height="wrap_content"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        android:editable="false" />
+
+    <TextView
+        android:id="@+id/gameDisplay"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@android:color/background_light"
+        android:gravity="start"
+        android:padding="16dp"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordLabel"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameDisplay"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:id="@+id/constraintLayout"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            android:id="@+id/constraintLayout2"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintLeft_creator="1">
+
+            <EditText
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/definintionTest"
+                android:hint="Start typing"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/slight_rounded_corners"
+                android:backgroundTint="@color/cardview_light_background"
+                android:layout_height="38dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                app:layout_constraintVertical_bias="1.0"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="220dp" />
+
+            <Button
+                android:text="R"
+                android:layout_width="88dp"
+                android:id="@+id/refreshBtn"
+                tools:layout_conversion_absoluteX="270dp"
+                tools:layout_conversion_absoluteY="224dp"
+                tools:layout_conversion_absoluteWidth="50dp"
+                tools:layout_conversion_absoluteHeight="48dp"
+                app:layout_constraintTop_toTopOf="@+id/definintionTest"
+                app:layout_constraintLeft_toRightOf="@+id/definintionTest"
+                app:layout_constraintBottom_toBottomOf="@+id/definintionTest"
+                app:layout_constraintRight_toLeftOf="@+id/Time_chronometer"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:backgroundTint="?attr/colorButtonNormal"
+                android:layout_height="48dp" />
+
+            <Chronometer
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Time_chronometer"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                tools:layout_conversion_absoluteX="320dp"
+                tools:layout_conversion_absoluteY="232dp"
+                tools:layout_conversion_absoluteWidth="63dp"
+                tools:layout_conversion_absoluteHeight="26dp"
+                app:layout_constraintBottom_toBottomOf="@+id/refreshBtn"
+                android:textColor="@color/cardview_light_background"
+                app:layout_constraintTop_toTopOf="@+id/refreshBtn"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" />
+        </android.support.constraint.ConstraintLayout>
+
+        <Button
+            android:text="Reset Level"
+            android:layout_width="0dp"
+            android:id="@+id/resetLevelBtn"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/background_light"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:background="@drawable/slight_rounded_corners"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/resetLevelBtn"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/slight_rounded_corners"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:text="Difficulty Rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="16dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/background_light"
+                android:textAlignment="center"
+                android:textStyle="normal|bold" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:id="@+id/ratingBar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

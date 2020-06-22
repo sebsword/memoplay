@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sebsw.memoplay.activities.MainActivity"
+    android:background="?attr/colorControlHighlight">
+
+
+    //This frame Layout acts as a container for all fragments
+    //So that the whole app can be contained in 1 main activity
+
+    <FrameLayout
+        android:id="@+id/container_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        /*the id of the frame layout is set so that it
+        can be accessed and referenced by the main activity
+        */
+    </FrameLayout>
+</RelativeLayout>

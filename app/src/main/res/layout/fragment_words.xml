@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sebsw.memoplay.fragments.WordsFragment"
+    android:orientation="vertical"
+
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wordsLabel"
+        android:text="Select a word"
+        android:textStyle="normal|bold"
+        android:textSize="36sp"
+        android:textColor="@android:color/background_light"
+        android:paddingBottom="15dp"
+        android:textAlignment="center"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="5dp"
+        android:background="?android:attr/colorBackground">
+        <include layout="@layout/content_words_recycler"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+        </include>
+    </LinearLayout>
+
+</LinearLayout>

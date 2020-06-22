@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MemoPlay</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_action_share_word">Share Word</string>
+    <string name="menu_action_sortAZ">Sort A-Z</string>
+    <string name="menu_action_sortZA">Sort Z-A</string>
+</resources>

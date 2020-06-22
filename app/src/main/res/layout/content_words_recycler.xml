@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- this is the recycler view for my words fragment, a recycler view is what allows me to automatically
+ add cards to my list -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/words_recycler">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

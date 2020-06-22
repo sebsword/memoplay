@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sebsw.memoplay">
+
+    <!-- Names some of the permissions needed for the application to run-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--
+        because my app works with fragments, the intent filter
+        to load a word launches the same activity as my main activity
+        the process of loading this word can then be done using fragments.
+        -->
+        <activity android:name=".activities.MainActivity"
+            android:windowSoftInputMode = "adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+            Next I add an intent filter, this means that whenever a user opens
+            my website (which for now is just allenchrology.org) It asks them if they want
+            to open it with my app, when they click yes, It should retrieve the word id
+            from the url and load that word into the local database.
+            -->
+            <intent-filter android:autoVerify="true">
+                <data android:scheme="http" android:host="allenchrology.org"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+
+</manifest>

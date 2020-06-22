@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/shareWord"
+        android:title="@string/menu_action_share_word"
+        app:showAsAction="ifRoom">
+    </item>
+
+    <item
+        android:id="@+id/deleteWord"
+        android:title="Delete Word"
+        app:showAsAction="ifRoom">
+    </item>
+
+</menu>

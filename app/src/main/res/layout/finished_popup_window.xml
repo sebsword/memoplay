@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="6dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:text="You Scored:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scoreLabel"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center" />
+
+        <Button
+        android:text="Review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewBtn" />
+
+    <Button
+        android:text="Replay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/replayBtn" />
+
+        <Button
+            android:text="Share With Friends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shareScoreBtn"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
