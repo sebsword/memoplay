@@ -8,14 +8,20 @@ From the Interviews and the results collected from my survey as well as an exten
  1. Interface must allow inputting of words through both physical and capacitive keyboards.
 
 2.	A game that tests typing speed and accuracy.
- 1.	Measure of typing speed must be calculated using acceptable methods.
+
+		a	Measure of typing speed must be calculated using acceptable methods.
 
 3.	Mobile solution that can be used on the go, to cater to the busy life of a student.
-  1.	Solution must be available on mobile devices
-  2.	Main features must be available without an internet connection
-    1.	New words should be stored locally on device
-    2.	Game should be playable with this local data
-    3.	Results may be stored remotely but should be accessible without an internet connection.
+
+ 		a	Solution must be available on mobile devices
+			
+ 		b	Main features must be available without an internet connection
+			
+    		i	New words should be stored locally on device
+						
+    		ii	Game should be playable with this local data
+						
+    		iii	Results may be stored remotely but should be accessible without an internet connection.
 
 4.	Review of results that can be shared, supporting WhatsApp messaging.
 
