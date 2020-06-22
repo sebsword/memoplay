@@ -5,18 +5,24 @@ Objectives
 From the Interviews and the results collected from my survey as well as an extensive conversation with my end user, I have identified the following specific objectives:
 
 1.	A platform with user submitted words and definitions that form a dictionary for the user to be tested on (this way definitions are tailored to the individual)
-  a.	Interface must allow inputting of words through both physical and capacitive keyboards.
+a.	Interface must allow inputting of words through both physical and capacitive keyboards.
+
 2.	A game that tests typing speed and accuracy.
-  a.	Measure of typing speed must be calculated using acceptable methods.
+a.	Measure of typing speed must be calculated using acceptable methods.
+
 3.	Mobile solution that can be used on the go, to cater to the busy life of a student.
-  a.	Solution must be available on mobile devices
-  b.	Main features must be available without an internet connection
-    i.	New words should be stored locally on device
-    ii.	Game should be playable with this local data
-    iii.	Results may be stored remotely but should be accessible without an internet connection.
+a.	Solution must be available on mobile devices
+b.	Main features must be available without an internet connection
+i.	New words should be stored locally on device
+ii.	Game should be playable with this local data
+iii.	Results may be stored remotely but should be accessible without an internet connection.
+
 4.	Review of results that can be shared, supporting WhatsApp messaging.
+
 5.	Ability to challenge friends on words and share definitions.
+
 6.	A level up system based on typing speed, accuracy and definition length.
+
 7.	Game difficulty must increase as the user progresses.
 
 Measures
