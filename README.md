@@ -1,7 +1,8 @@
 # memoplay est 03/2017
 A natively developed android application developed for dyslexic students to assist with memorising words and their definitions
 
-Objectives
+*Objectives*
+
 From the Interviews and the results collected from my survey as well as an extensive conversation with my end user, I have identified the following specific objectives:
 
 1.	A platform with user submitted words and definitions that form a dictionary for the user to be tested on (this way definitions are tailored to the individual)
@@ -31,7 +32,8 @@ From the Interviews and the results collected from my survey as well as an exten
 
 7.	Game difficulty must increase as the user progresses.
 
-Measures
+*Measures*
+
 1)	The creation of a form for user to enter words between 3 and 50 characters in length, categories with length between 2 and 50 and defintions between 2 and 500 characters long. Succesful check on the database to verify that entries have been made.
 
 2)	Return of a signalled response to the user indicating if a word has been typed correctly or not, successful calculation of a score from the number of words typed correctly (representing accuracy)
